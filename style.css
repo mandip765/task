@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background-color: #1E293B;
+  color: white;
+  /* height: 400px; */
+  align-items: center;
+}
+
+
+.headerhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10px 40px;
+}
+
+.headerhead a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #E6D8D8;
+}
+
+input {
+  border: 0.2px solid grey;
+  border-radius: 7px;
+  padding: 2px;
+}
+
+button {
+  border: 0.2px solid #1e293b;
+  border-radius: 7px;
+  padding: 2px;
+  background-color: #1E293B;
+  color: white;
+}
+
+.headerbox {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  /* height: 300px; */
+}
+
+.imagebox img {
+  border: 1px solid #1E293B;
+  border-radius: 8px;
+}
+
+
+.centerbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  gap: 10px;
+}
+
+.box {
+  border: 0.5px solid gray;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  font-family: 'PT Serif', serif;
+}
+
+.review {
+  border-radius: 10px;
+  background-color: #1E293B;
+  color: white;
+  padding: 20px;
+}
+
+.review-pic {
+  height: 50px;
+  display: flex;
+}
+
+.review-pic img {
+  clip-path: circle();
+}
+
+.reviewbox {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+footer {
+  background-color: #1E293B;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  height: 120px;
+  color: #E6D8D8;
+  padding: 20px;
+}
+
+.footer-box img {
+  width: 40px;
+}
+
+.footer-box a {
+  text-decoration: none;
+  color: #E6D8D8;
+}
+
+@media(max-width :830px) {
+  .centerbox {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .headerbox {
+    grid-template-columns: 1fr;
+  }
+}

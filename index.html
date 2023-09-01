@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@300&display=swap');
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 10px 40px;
+        background-color: #1E293B;
+        color: white;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      body {
+        font-family: 'Phudu', cursive;
+      }
+
+      .centerbox {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .cbox {
+        border: 0.5px solid gray;
+        border-radius: 10px;
+        padding: 5px;
+      }
+
+      .headerbox {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 90px;
+        height: 400px;
+        padding: 20px;
+        background-color: #1E293B;
+        color: white;
+      }
+
+      a {
+        text-decoration: none;
+        color: #E6D8D8;
+        padding: 0 10px;
+      }
+
+      input {
+        border: 0.2px solid grey;
+        border-radius: 7px;
+        padding: 2px;
+        width: auto;
+      }
+
+      button {
+        border: 0.2px solid #1e293b;
+        border-radius: 7px;
+        padding: 2px;
+        background-color: #1E293B;
+        color: white;
+      }
+
+      img {
+        height: 50px;
+      }
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .headerbox img {
+        height: auto;
+        border: 1px solid #1E293B;
+        border-radius: 8px;
+      }
+
+
+      .reviewbox {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+
+      .review-pic {
+        height: 50px;
+        display: flex;
+      }
+
+      .review-pic img {
+        clip-path: circle();
+      }
+
+      .review {
+        border-radius: 10px;
+        background-color: #1E293B;
+        color: white;
+        padding: 20px;
+      }
+
+      footer {
+        background-color: #1E293B;
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+        height: auto;
+        color: #E6D8D8;
+        padding: 20px;
+      }
+
+      .footer-box img {
+        max-height: 40px;
+      }
+
+      @media(max-width: 1100px) {
+        .reviewbox {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media(max-width: 700px) {
+        .reviewbox {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media(max-width: 700px) {
+        .centerbox {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .headerbox {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media(max-width: 550px) {
+        .centerbox {
+          grid-template-columns: 1fr;
+        }
+
+        .reviewbox {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <h1><strong>Skillz</strong></h1>
+      <nav>
+        <a href="">Log In</a>
+        <a href="">Check Courses</a>
+      </nav>
+    </header>
+
+
+    <div class="headerbox">
+      <div class="dis-info">
+        <h1><strong>Learn any digital skill of your choice today</strong></h1>
+        <p>Over 30000 students currently learn with us</p>
+        <br>
+        <form action="">
+          <input type="text" placeholder="Enter Your Email Address">
+          <button>Start learning</button>
+          <p>Try out our free courses.No risk, no credit card required</p>
+        </form>
+      </div>
+      <div class="head-img">
+        <img style="width:100%;"
+          src="https://images.unsplash.com/photo-1540359021620-606466ccfc85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvdyUyMGNhc2V8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="">
+      </div>
+    </div>
+    <br>
+
+    <main>
+
+      <div class="centerbox">
+        <div class="cbox">
+          <div class="icon">
+            <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-folder-256.png" alt="">
+          </div>
+          <h2><strong>Over 300 available courses</strong></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis expedita distinctio dolorum qui,
+            architecto molestias delectus vitae unde. Laborum vero commodi aperiam quam ab animi tempore quae
+            praesentium
+            deleniti alias cumque blanditiis corrupti quos molestias facilis voluptatum accusantium, modi aspernatur
+            ratione. Minima perferendis saepe excepturi pariatur eius quae voluptatem aperiam.</p>
+        </div>
+        <div class="cbox">
+          <div class="icon"> <img src="https://cdn0.iconfinder.com/data/icons/education-22/48/graduation-cap-256.png"
+              alt="">
+          </div>
+          <h2>Free certificate offered on all courses</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis expedita distinctio dolorum qui,
+            architecto molestias delectus vitae unde. Laborum vero commodi aperiam quam ab animi tempore quae
+            praesentium
+            deleniti alias cumque blanditiis corrupti quos molestias facilis voluptatum accusantium, modi aspernatur
+            ratione. Minima perferendis saepe excepturi pariatur eius quae voluptatem aperiam.</p>
+        </div>
+        <div class="cbox">
+          <div class="icon">
+            <img src="https://cdn3.iconfinder.com/data/icons/font-awesome-solid/512/book-256.png" alt="">
+          </div>
+          <h2>Book 1 on 1 session as low as $5</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis expedita distinctio dolorum qui,
+            architecto molestias delectus vitae unde. Laborum vero commodi aperiam quam ab animi tempore quae
+            praesentium
+            deleniti alias cumque blanditiis corrupti quos molestias facilis voluptatum accusantium, modi aspernatur
+            ratione. Minima perferendis saepe excepturi pariatur eius quae voluptatem aperiam.</p>
+        </div>
+      </div>
+      <div class="reviewbox">
+        <div class="review">
+          <div class="review-pic">
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              alt="">
+            <div class="discription">
+              <strong>Ryan Florence</strong>
+              <p>Remix & React Training</p>
+            </div>
+          </div>
+          <br>
+          <p>I feel like an idiot for not using Tailwind CSS until now.</p>
+        </div>
+        <div class="review">
+          <div class="review-pic">
+            <img
+              src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGVyc29ufGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              alt="">
+            <div class="discription">
+              <strong>Debbie</strong>
+              <p>Senior Program Manager at Microsoft</p>
+            </div>
+          </div>
+          <br>
+          <p>Have been working with CSS for over ten years and Tailwind just makes my life easier. It is still CSS and
+            you
+            use flex grid etc but just quicker to write and maintain. You should give it a try.</p>
+        </div>
+        <div class="review">
+          <div class="review-pic">
+            <img
+              src="https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlcnNvbnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+              alt="">
+            <div class="discription">
+              <strong>Shruti Balasa</strong>
+              <p>Full Stack Web Developer</p>
+            </div>
+          </div>
+          <br>
+          <p>With Tailwind I can offer my clients faster turnaround times on custom WordPress themes, both for initial
+            builds and for future revisions.</p>
+        </div>
+        <div class="review">
+          <div class="review-pic">
+            <img
+              src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBlcnNvbnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+              alt="">
+            <div class="discription">
+              <strong>Sara Vieira </strong>
+              <p>CodeSandbox</p>
+            </div>
+          </div>
+          <br>
+          <p>I have no design skills and with Tailwind I can actually make good looking websites with ease and it's
+            everything I ever wanted in a CSS framework.</p>
+        </div>
+        <div class="review">
+          <div class="review-pic">
+            <img
+              src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fHBlcnNvbnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+              alt="">
+            <div class="discription">
+              <strong>Sarah Dayan</strong>
+              <p>@frontStuff_io</p>
+            </div>
+          </div>
+          <br>
+          <p>Tailwind CSS is bridging the gap between design systems and products. It's becoming the defacto API for
+            styling.</p>
+        </div>
+      </div>
+      </div>
+
+
+
+      <footer>
+        <div class="footer-box">
+          <h1><strong>Skillz</strong></h1>
+          <p>Copyright © 2021</p>
+        </div>
+        <div class="footer-box">
+          <ul><a href="">Home</a></ul>
+          <ul><a href="">Tutors</a></ul>
+          <ul><a href="">Categories</a></ul>
+        </div>
+        <div class="footer-box">
+          <a href=""><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_gray-512.png"
+              alt=""></a>
+          <a href=""><img src="https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/TWITTER-512.png" alt=""></a>
+          <a href=""><img src="https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/INSTAGRAM-512.png"
+              alt=""></a>
+          <a href=""><img src="https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/whatsapp-512.png"
+              alt=""></a>
+        </div>
+      </footer>
+
+    </main>
+  </body>
+
+</html>
